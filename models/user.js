@@ -5,15 +5,14 @@ var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
     // this is taken care by the passportLocalMongoose // not sure how???
-    // username: {
-    //     type: String,
-    //     required: true,
-    //     unique: true
-    // },
-    // password: {
-    //     type: String,
-    //     required: true,
-    // },
+    firstname: {
+        type: String,
+        default: ''
+    },
+    lastname: {
+        type: String,
+        default: '',
+    },
     admin: {
         type: Boolean,
         default: false,
